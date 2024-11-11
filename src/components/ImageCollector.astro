@@ -13,6 +13,10 @@ interface Props {
 }
 
 const { lang } = Astro.props;
+
+// 获取当前路径并处理
+const currentPath = Astro.url.pathname;
+const normalizedPath = currentPath === '/' ? '/' : `/${currentPath.split('/')[1]}`;
 ---
 
 <Container>
@@ -24,7 +28,10 @@ const { lang } = Astro.props;
         class="px-4 py-2 border rounded-md bg-white shadow-sm"
         onchange="window.location.href = this.value">
         {languages.map((item) => (
-          <option value={item.path} selected={item.path === Astro.url.pathname}>
+          <option 
+            value={item.path} 
+            selected={item.path === normalizedPath}
+          >
             {item.name}
           </option>
         ))}
