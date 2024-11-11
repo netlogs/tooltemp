@@ -1,11 +1,72 @@
 ---
-export const title = "this is title";
-export const description = "this is description";
 export const iconHref = "/favicon.svg";
 
 export const navbar1 = "ABC";
 export const navbar2 = "DEF";
 export const footerText = "YourCompanyName";
-export const brandName = "Yzy";
+export const brandName = "bulk-screenshot-downloader";
 
+interface LanguageConfig {
+  seotitle: string;
+  seodescription: string;
+  title: string;
+  description: string;
+  tip: string;
+  buttonDownload: string;
+  buttonClear: string;
+  q1: string;
+  a1: string;
+  q2: string;
+  a2: string;
+  q3: string;
+  a3: string;
+}
+
+export const zhCN: LanguageConfig = {
+  seotitle: "截图批量下载器",
+  seodescription: "一站式批量截图下载工具，支持一键下载和自动命名。无论是工作还是学习，都能帮助您快速整理和管理大量截图文件，让您的文件管理更轻松高效！",
+  title: "截图批量下载器",
+  description: "在下方区域粘贴图片以批量下载",
+  tip: "点击并粘贴(ctrl-v)图片到此处",
+  buttonDownload: "批量下载",
+  buttonClear: "清除所有",
+  q1: "如何使用？",
+  a1: "直接将图片复制后，在收集区域内粘贴即可。支持批量粘贴多张图片。",
+  q2: "支持哪些图片格式？",
+  a2: "支持常见的图片格式，包括 PNG、JPG、JPEG、GIF 等。",
+  q3: "如何下载图片？",
+  a3: "点击\"批量下载\"按钮即可下载所有已收集的图片。",
+};
+
+export const enUS: LanguageConfig = {
+  seotitle: "Batch screenshot downloader",
+  seodescription: "One-stop bulk screenshot download tool with support for one-click download and automatic naming. Helps you quickly organize large numbers of screenshot files.",
+  title: "Batch screenshot downloader",
+  description: "Paste screenshots below to download in batch",
+  tip: "Click and paste (ctrl-v) screenshots here",
+  buttonDownload: "Download All",
+  buttonClear: "Clear All",
+  q1: "How to use?",
+  a1: "Simply copy images and paste them in the collection area. Supports batch pasting of multiple images.",
+  q2: "What image formats are supported?",
+  a2: "Supports common image formats including PNG, JPG, JPEG, GIF, etc.",
+  q3: "How to download images?",
+  a3: "Click the \"Download All\" button to download all collected images.",
+};
+
+export const jaJP: LanguageConfig = {
+  seotitle: "スクリーンショット一括ダウンローダー",
+  seodescription: "ワンクリックダウンロードと自動命名をサポートするワンストップ一括スクリーンショットダウンロードツール。大量のスクリーンショットファイルをすばやく整理するのに役立ちます。",
+  title: "スクリーンショット一括ダウンローダー",
+  description: "下記エリアにスクリーンショットを貼り付けて一括ダウンロード",
+  tip: "ここをクリックしてスクリーンショットを貼り付け(ctrl-v)",
+  buttonDownload: "一括ダウンロード",
+  buttonClear: "すべて消去",
+  q1: "使い方は？",
+  a1: "スクリーンショットをコピーして、収集エリアに貼り付けるだけです。複数スクリーンショットの一括貼り付けに対応。",
+  q2: "対応している画像形式は？",
+  a2: "PNG、JPG、JPEG、GIF など一般的な画像形式に対応しています。",
+  q3: "ダウンロード方法は？",
+  a3: "「一括ダウンロード」ボタンをクリックすると、収集したスクリーンショットをすべてダウンロードできます。",
+};
 ---

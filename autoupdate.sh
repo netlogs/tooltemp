@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # ===== 在这里定义所有需要替换的变量 =====
-SITE="https://your-custom-domain.com"
-SITE_MAP="https://your-custom-domain.com/sitemap-index.xml"  # 完整的站点地图 URL
-FOOTER_TEXT="YourCompanyName"
+SITE="https://bulkscreenshotdownload.com/"
+SITE_MAP="https://bulkscreenshotdownload.com/sitemap-index.xml"  # 完整的站点地图 URL
+FOOTER_TEXT="bulk-screenshot-downloader"
 # ... 可以继续添加其他变量 ...
 
 # ===== 执行替换操作 =====
