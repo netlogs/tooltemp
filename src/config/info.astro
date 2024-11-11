@@ -20,6 +20,10 @@ interface LanguageConfig {
   a2: string;
   q3: string;
   a3: string;
+  q4: string;
+  a4: string;
+  q5: string;
+  a5: string;
 }
 
 export const zhCN: LanguageConfig = {
@@ -30,28 +34,44 @@ export const zhCN: LanguageConfig = {
   tip: "点击并粘贴(ctrl-v)图片到此处",
   buttonDownload: "批量下载",
   buttonClear: "清除所有",
-  q1: "如何使用？",
-  a1: "直接将图片复制后，在收集区域内粘贴即可。支持批量粘贴多张图片。",
-  q2: "支持哪些图片格式？",
-  a2: "支持常见的图片格式，包括 PNG、JPG、JPEG、GIF 等。",
-  q3: "如何下载图片？",
-  a3: "点击\"批量下载\"按钮即可下载所有已收集的图片。",
+  q1: "这个截图批量下载器有什么特点？",
+  a1: "本工具支持一键批量下载多个截图，无需手动重命名和保存。您可以直接复制截图，在收集区域粘贴即可。支持同时处理多张截图，自动按序号命名，让截图管理更轻松。",
+  
+  q2: "如何使用截图批量下载功能？",
+  a2: "使用方法非常简单：1. 选择需要保存的截图并复制；2. 在收集区域按Ctrl+V粘贴；3. 可以继续添加更多截图；4. 点击\"批量下载\"按钮一次性下载所有截图。如果要删除某张截图，点击图片右上角的删除按钮即可。",
+  
+  q3: "支持哪些截图格式和操作系统？",
+  a3: "支持所有常见的图片格式，包括PNG、JPG、JPEG、GIF等。可在Windows、Mac、Linux等任何操作系统的主流浏览器中使用，无需安装任何软件。",
+  
+  q4: "如何管理已添加的截图？",
+  a4: "您可以随时预览已添加的截图，单击删除按钮移除不需要的图片。如果要清空所有截图，点击\"清除所有\"按钮即可。下载时，截图会自动按顺序编号，方便后续整理。",
+  
+  q5: "有使用次数或文件大小限制吗？",
+  a5: "本工具完全免费，没有使用次数限制。单次可处理的截图数量不限，但建议每次处理的截图总大小不超过100MB，以确保最佳性能。所有操作都在浏览器本地完成，保证您的截图安全。"
 };
 
 export const enUS: LanguageConfig = {
-  seotitle: "Batch screenshot downloader",
+  seotitle: "bulk screenshot downloader",
   seodescription: "One-stop bulk screenshot download tool with support for one-click download and automatic naming. Helps you quickly organize large numbers of screenshot files.",
-  title: "Batch screenshot downloader",
-  description: "Paste screenshots below to download in batch",
+  title: "bulk screenshot downloader",
+  description: "Paste screenshots below to download in bulk",
   tip: "Click and paste (ctrl-v) screenshots here",
   buttonDownload: "Download All",
   buttonClear: "Clear All",
-  q1: "How to use?",
-  a1: "Simply copy images and paste them in the collection area. Supports batch pasting of multiple images.",
-  q2: "What image formats are supported?",
-  a2: "Supports common image formats including PNG, JPG, JPEG, GIF, etc.",
-  q3: "How to download images?",
-  a3: "Click the \"Download All\" button to download all collected images.",
+  q1: "What are the features of this bulk screenshot downloader?",
+  a1: "This tool supports one-click bulk downloading of multiple screenshots without manual renaming. Simply copy and paste your screenshots into the collection area. It handles multiple screenshots simultaneously, automatically names them sequentially, making screenshot management effortless.",
+  
+  q2: "How to use the bulk screenshot download feature?",
+  a2: "The process is straightforward: 1. Select and copy your screenshots; 2. Paste them in the collection area using Ctrl+V; 3. Continue adding more screenshots if needed; 4. Click the 'Download All' button to download all screenshots at once. To remove a specific screenshot, click the delete button in its top-right corner.",
+  
+  q3: "What screenshot formats and operating systems are supported?",
+  a3: "All common image formats are supported, including PNG, JPG, JPEG, GIF, etc. The tool works in any major browser on Windows, Mac, Linux, or any other operating system, with no software installation required.",
+  
+  q4: "How to manage added screenshots?",
+  a4: "You can preview all added screenshots and remove unwanted ones using the delete button. To clear all screenshots, simply click the 'Clear All' button. When downloading, screenshots are automatically numbered sequentially for easy organization.",
+  
+  q5: "Are there any usage limits or file size restrictions?",
+  a5: "This tool is completely free with no usage limits. While there's no restriction on the number of screenshots per session, we recommend keeping the total size under 100MB for optimal performance. All operations are performed locally in your browser, ensuring your screenshots remain secure."
 };
 
 export const jaJP: LanguageConfig = {
@@ -62,11 +82,19 @@ export const jaJP: LanguageConfig = {
   tip: "ここをクリックしてスクリーンショットを貼り付け(ctrl-v)",
   buttonDownload: "一括ダウンロード",
   buttonClear: "すべて消去",
-  q1: "使い方は？",
-  a1: "スクリーンショットをコピーして、収集エリアに貼り付けるだけです。複数スクリーンショットの一括貼り付けに対応。",
-  q2: "対応している画像形式は？",
-  a2: "PNG、JPG、JPEG、GIF など一般的な画像形式に対応しています。",
-  q3: "ダウンロード方法は？",
-  a3: "「一括ダウンロード」ボタンをクリックすると、収集したスクリーンショットをすべてダウンロードできます。",
+  q1: "このスクリーンショット一括ダウンローダーの特徴は？",
+  a1: "本ツールは複数のスクリーンショットを一括ダウンロードでき、手動での名前付けは不要です。スクリーンショットをコピーして収集エリアに貼り付けるだけで、複数のスクリーンショットを同時に処理し、自動的に連番で保存できます。",
+  
+  q2: "スクリーンショット一括ダウンロード機能の使い方は？",
+  a2: "使用方法は簡単です：1. 保存したいスクリーンショットをコピー；2. 収集エリアにCtrl+Vで貼り付け；3. 必要に応じて追加のスクリーンショットを追加；4.「一括ダウンロード」ボタンをクリックして全て一度にダウンロード。不要な画像は右上の削除ボタンで削除できます。",
+  
+  q3: "対応しているスクリーンショット形式とOSは？",
+  a3: "PNG、JPG、JPEG、GIFなど一般的な画像形式に対応しています。Windows、Mac、Linuxなど、主要なブラウザがあれば、どのOSでも使用可能で、ソフトウェアのインストールは不要です。",
+  
+  q4: "追加したスクリーンショットの管理方法は？",
+  a4: "追加したスクリーンショットはプレビュー表示され、不要な画像は削除ボタンで削除できます。全てのスクリーンショットを削除する場合は「すべて消去」ボタンをクリックします。ダウンロード時は自動的に連番が付けられ、整理が簡単です。",
+  
+  q5: "使用回数やファイルサイズの制限はありますか？",
+  a5: "本ツールは完全無料で、使用回数の制限はありません。一度に処理できるスクリーンショット数に制限はありませんが、最適なパフォーマンスのため、合計サイズは100MB以下を推奨します。全ての処理はブラウザ上で行われ、スクリーンショットの安全性が保証されます。"
 };
 ---
